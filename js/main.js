@@ -2,9 +2,11 @@
 
 $(function () {
 
-    $('.header__btn-menu').on('click', function () {
-        $('.menu').toggleClass('menu--open');
+    $(".hamburger").on("click", function() {
+        $(this).toggleClass("is-active");
+        $(".menu").toggleClass("open");
     });
+
 });
 
 // MODAL
@@ -16,8 +18,8 @@ var btn = document.querySelectorAll(".button");
 var modbtn = document.querySelector(".modal-main__form-button");
 var okbtn = document.querySelector("button.ok");
 
-var xmodbutton1 = document.querySelector("modal-main__closebtn")[0];
-var xmodbutton2 = document.querySelector("close_ok_modal_window")[0];
+var xmodbutton1 = document.getElementsByClassName("modal-main__closebtn")[0];
+var xmodbutton2 = document.getElementsByClassName("close_ok_modal_window")[0];
 
 
 for(var i = 0; i < btn.length; i++)
@@ -50,6 +52,5 @@ modbtn.onclick = function () {
 okbtn.onclick = function () {
     submitModal.style.display = "none";
 }
-
 
 
