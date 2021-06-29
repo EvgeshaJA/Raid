@@ -1,0 +1,523 @@
+/* main-button*/
+@-webkit-keyframes button {
+  0% {
+      left: -30px;
+      margin-left: 0px;
+  }
+
+  30% {
+      left: 110%;
+      margin-left: 80px;
+  }
+
+  100% {
+      left: 110%;
+      margin-left: 80px;
+  }
+}
+
+
+
+
+/*Объекты анимации*/
+#g4559{
+	animation: 5s ease-in-out 3s road_car1;
+	animation-iteration-count: infinite;
+	opacity:0;
+}
+
+#g3543{
+	animation: 5s ease-in-out 1s road_car1_1;
+	animation-iteration-count: infinite;
+	opacity:0;
+}
+
+#g4719{
+	animation: 5s ease-in-out 1s road_car2_0;
+	animation-iteration-count: infinite;
+	opacity:0;
+}
+
+#g4875{
+	animation: 5s ease-in-out 3s road_car2_1;
+	animation-iteration-count: infinite;
+	opacity:0;
+}
+
+#f0_0{
+	animation: 1s linear 0s a_f0_0;
+	animation-iteration-count: infinite;
+}
+
+#f0_1{
+	animation: 1s linear 0.33s a_f0_0;
+	animation-iteration-count: infinite;
+}
+
+#f0_2{
+	animation: 1s linear 0.67s a_f0_0;
+	animation-iteration-count: infinite;
+}
+
+#f0_3{
+	animation: 1s linear 1s a_f0_0;
+	animation-iteration-count: infinite;
+}
+
+.wheel{
+	animation: 0.5s linear 0s a_wheel;
+	animation-iteration-count: infinite;
+	transform: perspective(500px) rotate3d(1, 1, 1, 59deg) scale(0.7) rotateZ(0deg);
+}
+
+#big_1d8e{
+	animation: 4s linear 1s a_1d8e;
+	animation-iteration-count: infinite;
+}
+
+#male_1b8e{
+	animation: 4s linear 3s a_1d8e;
+	animation-iteration-count: infinite;
+}
+
+.money-tun ac:after{
+	animation: 3s linear 3s money-anim;
+	animation-iteration-count: infinite;
+}
+.money-tun bc:after{
+	animation: 3s linear 5s money-anim-p2;
+	animation-iteration-count: infinite;
+}
+
+.save path{
+	animation: 3s linear 0s save-anim;
+	animation-iteration-count: infinite;
+}
+
+
+#st-1,
+#st-2,
+#st-3,
+#st-4 {
+  -webkit-animation: 4s linear 1s a_1d8e;
+          animation: 4s linear 1s a_1d8e;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite; }
+
+#st-5,
+#st-6,
+#st-7,
+#st-8 {
+  -webkit-animation: 4s linear 3s a_1d8e;
+          animation: 4s linear 3s a_1d8e;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite; }
+/*конец объекты анимации*/
+/*Ключи анимации*/
+
+/*f0_0*/
+@keyframes a_f0_0 {
+    0% { transform: translate(10%,5%); }    
+    100% { transform: translate(-84%,-60%);}   
+}
+@-moz-keyframes a_f0_0 {
+    0% { transform: translate(10%,5%); }   
+   100% { transform: translate(-84%,-60%);}   
+}
+@-webkit-keyframes a_f0_0 {
+     0% { transform: translate(10%,5%); }    
+  100% { transform: translate(-84%,-60%);}   
+}
+/* /f0_0/ */
+
+/*wheel*/
+@keyframes a_wheel {
+    0% { transform: perspective(500px) rotate3d(1, 1, 1, 59deg) scale(0.7) rotateZ(0deg); }    
+    100% {transform: perspective(500px) rotate3d(1, 1, 1, 59deg) scale(0.7) rotateZ(360deg);}   
+}
+@-moz-keyframes a_wheel {
+   0% { transform: perspective(500px) rotate3d(1, 1, 1, 59deg) scale(0.7) rotateZ(0deg); }    
+    100% {transform: perspective(500px) rotate3d(1, 1, 1, 59deg) scale(0.7) rotateZ(360deg);}
+}
+@-webkit-keyframes a_wheel {
+   0% { transform: perspective(500px) rotate3d(1, 1, 1, 59deg) scale(0.7) rotateZ(0deg); }    
+    100% {transform: perspective(500px) rotate3d(1, 1, 1, 59deg) scale(0.7) rotateZ(360deg);}
+}
+/* /wheel/ */
+
+/*1d8e*/
+@keyframes a_1d8e {
+    0% { transform: translate(0%,0%); }    
+    50% { transform: translate(0%,-5%); }    
+    100% { transform: translate(0%,0%);}   
+}
+@-moz-keyframes a_1d8e {
+    0% { transform: translate(0%,0%); }   
+    50% { transform: translate(0%,-5%); }   
+   100% { transform: translate(0%,0%);}   
+}
+@-webkit-keyframes a_1d8e {
+     0% { transform: translate(0%,0%); }    
+     50% { transform: translate(0%,-5%); }    
+	100% { transform: translate(0%,0%);}   
+}
+/* /1d8e/ */
+
+
+@keyframes road_car1 {
+    0% { transform: translate(23%,-30%); opacity:1;}    
+    100% { transform: translate(-52%,68%); opacity:1;}   
+}
+
+
+@-moz-keyframes road_car1 {
+    0% { transform: translate(23%,-30%); opacity:1;}   
+   100% { transform: translate(-52%,68%); opacity:1;}   
+}
+
+
+@-webkit-keyframes road_car1 {
+     0% { transform: translate(23%,-30%); opacity:1;}    
+  100% { transform: translate(-52%,68%); opacity:1;}   
+}
+
+@keyframes road_car1_1 {
+    0% { transform: translate(41%,-51%); opacity:1;}    
+    100% { transform: translate(-34%,46%); opacity:1;}   
+}
+
+
+@-moz-keyframes road_car1_1 {
+    0% { transform: translate(41%,-51%); opacity:1;}   
+   100% { transform: translate(-34%,46%); opacity:1;}   
+}
+
+
+@-webkit-keyframes road_car1_1 {
+     0% { transform: translate(41%,-51%); opacity:1;}    
+  100% { transform: translate(-34%,46%); opacity:1;}   
+}
+
+@keyframes road_car2_0 {
+    0% { transform: translate(-62%,82%); opacity:1;}    
+    100% { transform: translate(7%,-8%); opacity:1;}   
+}
+
+
+@-moz-keyframes road_car2_0 {
+    0% { transform: translate(-62%,82%); opacity:1;}   
+   100% {     transform: translate(7%,-8%); opacity:1;}   
+}
+
+
+@-webkit-keyframes road_car2_0 {
+     0% { transform: translate(-62%,82%); opacity:1;}    
+  100% {     transform: translate(7%,-8%); opacity:1;}   
+}
+
+@keyframes road_car2_1 {
+    0% { transform: translate(-25%,33%); opacity:1;}    
+    100% { transform: translate(46%,-60%); opacity:1;}   
+}
+
+
+@-moz-keyframes road_car2_1 {
+    0% { transform:translate(-25%,33%); opacity:1;}   
+   100% {     transform: translate(46%,-60%); opacity:1;}   
+}
+
+
+@-webkit-keyframes road_car2_1 {
+     0% { transform: translate(-25%,33%); opacity:1;}    
+  100% {     transform: translate(46%,-60%); opacity:1;}   
+}
+
+/*money-anim*/
+@keyframes money-anim {
+    0% {   transform: rotate(138deg) translate(0px, -300px);}    
+    100% { transform: rotate(138deg) translate(0px, 300px);}   
+}
+@-moz-keyframes money-anim {
+    0% {   transform: rotate(138deg) translate(0px, -300px);}    
+    100% {   transform: rotate(138deg) translate(0px, 300px);}   
+}
+@-webkit-keyframes money-anim {
+    0% { transform: rotate(138deg) translate(0px, -300px);}    
+    100% { transform: rotate(138deg) translate(0px, 300px);}   
+}
+@keyframes money-anim-p2 {
+    0% { transform: rotate(155deg) translate(0px, -300px);}    
+    100% { transform: rotate(155deg) translate(0px, 320px);}
+}
+@-moz-keyframes money-anim-p2 {
+  0% { transform: rotate(155deg) translate(0px, -300px);}    
+    100% { transform: rotate(155deg) translate(0px, 320px);}
+}
+@-webkit-keyframes money-anim-p2 {
+  0% { transform: rotate(155deg) translate(0px, -300px);}    
+    100% { transform: rotate(155deg) translate(0px, 320px);}
+}
+/*/money-anim*/
+
+
+/*save-anim*/
+@keyframes save-anim {
+    0% {   transform:  translate(0px, -300px);}    
+    100% { transform: translate(0px, 300px);}   
+}
+@-moz-keyframes save-anim {
+    0% {   transform: translate(0px, -300px);}    
+    100% {   transform:  translate(0px, 300px);}   
+}
+@-webkit-keyframes save-anim {
+    0% { transform:  translate(0px, -300px);}    
+    100% { transform:  translate(0px, 300px);}   
+}
+/*/save-anim*/
+
+
+.rain {
+     position: absolute;
+    left: 0;
+    width:65%;
+    height: 100%;
+    z-index: 2;
+    transform: perspective(376px) rotate3d(-9, 11, 2, 23deg) scale(1) rotateY(-26deg);
+}
+
+.rain.back-row {
+  display: none;
+  z-index: 1;
+  bottom: 60px;
+  opacity: 0.5;
+}
+
+body.back-row-toggle .rain.back-row {
+  display: block;
+}
+
+.drop {
+  position: absolute;
+  bottom: 100%;
+  width: 15px;
+  height: 40px;
+  pointer-events: none;
+  animation: drop 0.5s linear infinite;
+}
+
+@keyframes drop {
+  0% {
+    transform: translateY(0vh);
+  }
+  75% {
+    transform: translateY(50vh);
+  }
+  100% {
+    transform: translateY(50vh);
+  }
+}
+
+.stem {
+  width: 1px;
+  height: 60%;
+  margin-left: 7px;
+  background: linear-gradient(to bottom, rgba(45, 216, 255, 0.42), rgba(0, 196, 255, 0.65));
+  animation: stem 0.5s linear infinite;
+}
+
+@keyframes stem {
+  0% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.splat {
+  width: 15px;
+  height: 10px;
+  border-top: 2px dotted rgb(18, 177, 224);
+  border-radius: 50%;
+  opacity: 1;
+  transform: scale(0);
+  animation: splat 0.5s linear infinite;
+  display: none;
+}
+
+body.splat-toggle .splat {
+  display: block;
+}
+
+@keyframes splat {
+  0% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  90% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+
+.toggles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.toggle {
+  position: absolute;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  line-height: 51px;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.toggle:active {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.toggle.active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.splat-toggle {
+  top: 20px;
+}
+
+.back-row-toggle {
+  top: 90px;
+  line-height: 12px;
+  padding-top: 14px;
+}
+
+.single-toggle {
+  top: 160px;
+}
+
+body.single-toggle .drop {
+  display: none;
+}
+
+body.single-toggle .drop:nth-child(10) {
+  display: block;
+}
+
+.calcly {
+    -webkit-clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    position: absolute;
+    top: -45%;
+    left: 18%;
+    width: 12.5vw;
+    height: 13vw;
+    background: #00000000;
+    transform: perspective(461px) rotate3d(32, 16, 0, 79deg) scale(0.6) rotateY(-18deg) rotateX(-6deg) rotateZ(8deg);
+}
+
+.sontong{
+	position: absolute;
+    bottom: -32px;
+    left: -8px;
+    width: 100%;
+    height: 74%;
+    background: #00000000;
+    transform: rotateX(39deg);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    z-index: -1;
+}
+
+
+/* MONEY*/
+
+.money-tun ac {
+  position: absolute;
+  display: block;
+  left: 55px;
+  right: 0;
+  top: 16%;
+  bottom: 0;
+  background: #00000000;
+  width: 50%;
+  height: 73%;
+  border-radius: 90%;
+  transform: perspective(376px) rotate3d(-0.5, 1, -0.1, -61deg) scale(1.2) rotateZ(18deg);
+  overflow: hidden;
+  max-width: 200px;
+}
+
+.money-tun bc {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  background: #00000000;
+  width: 100%;
+  height: 90%;
+  border-radius: 90%;
+  transform: perspective(376px) rotate3d(-0.5, 0.9, 0.1, 54deg) scale(1) rotateZ(-5deg);
+  overflow: hidden;
+}
+
+
+
+.money-tun {
+  position: relative;
+}
+
+.money-tun ac:after {
+  content: '';
+  width: 140%;
+  display: block;
+  position: absolute;
+  height: 10%;
+  background: #ffffff59;
+  left: -12px;
+  top: 48%;
+  transform: rotate(138deg) translate(0px, 0px);
+}
+
+.money-tun bc:after {
+  content: '';
+  width: 140%;
+  display: block;
+  position: absolute;
+  height: 10%;
+  background: #ffffff59;
+  left: -12px;
+  top: 50%;
+  transform: rotate(155deg) translate(0px, 0px);
+}
+
+
