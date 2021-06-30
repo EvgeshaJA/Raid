@@ -1,5 +1,5 @@
 /* main-button*/
-@-webkit-keyframes button {
+@keyframes button {
   0% {
       left: -30px;
       margin-left: 0px;

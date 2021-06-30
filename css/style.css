@@ -457,9 +457,10 @@ button {
   width: 15px;
   height: 100px;
   margin-left: 60px;
-  background: #f2d25e;
+  background-color: #f2d25e;
   position: absolute;
-  z-index: 1;
+  top: -20px;
+  z-index: 9999999;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   -webkit-transition: all 0.1s;
@@ -499,28 +500,38 @@ button {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
-  margin-top: 28px;
+  margin-top: 73px;
 }
 
 .steps__card {
   text-align: center;
-  height: 470px;
+  height: 416px;
 }
 
 .steps__card:nth-of-type(1) {
-  background: url(../img/steps_1_bg.png) no-repeat 0 50px;
+  background: url(../img/steps_1_bg.png);
+  background-size: 100%;
+  background-position: center bottom;
+  background-repeat: no-repeat;
 }
 
 .steps__card:nth-of-type(2) {
-  background: url(../img/steps_2_bg.png) no-repeat 0 50px;
+  background: url(../img/steps_2_bg.png);
+  background-size: 100%;
+  background-position: center bottom;
+  background-repeat: no-repeat;
 }
 
 .steps__card:nth-of-type(3) {
-  background: url(../img/steps_3_bg.png) no-repeat 0 50px;
+  background: url(../img/steps_3_bg.png);
+  background-size: 100%;
+  background-position: center bottom;
+  background-repeat: no-repeat;
 }
 
 .steps__card-img-inner {
   height: 170px;
+  margin-top: -45px;
 }
 
 .steps__card-img {
@@ -1223,6 +1234,9 @@ button {
 }
 
 @media (max-width: 992px) {
+  .header__inner {
+    padding: 20px 0;
+  }
   .header__button {
     min-width: 60px;
     width: 60px;
@@ -1230,24 +1244,32 @@ button {
   .header__button-link {
     display: none;
   }
-  .steps__line {
-    display: none;
-  }
   .steps__cards {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .steps__card {
-    width: 100%;
-    margin-bottom: 20px;
+    width: 45%;
+    margin-bottom: 45px;
   }
   .steps__card:last-of-type {
     margin-bottom: 0;
   }
-  .steps__card:nth-of-type(1), .steps__card:nth-of-type(2), .steps__card:nth-of-type(3) {
-    background-size: cover;
+  .steps__card-img-inner {
+    margin-top: 0;
+  }
+  .steps__card-content {
+    padding: 0 10px;
   }
   .steps__card-content-text {
-    padding: 10px 100px 0;
+    padding: 0;
+    margin-top: 10px;
   }
   .services__inner {
     display: block;
@@ -1284,6 +1306,84 @@ button {
     background-image: linear-gradient(to left, #e2b214 0%, #ddc50c 100%);
     -webkit-box-shadow: none;
             box-shadow: none;
+  }
+  .sale {
+    background: none;
+    background-image: url(../img/sale-mobilebg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 200px;
+  }
+  .sale__inner {
+    display: block;
+  }
+  .sale__proposition {
+    position: relative;
+    bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sale__proposition-inner {
+    position: relative;
+    top: 22%;
+  }
+  .sale__button {
+    margin: 0;
+    bottom: 30px;
+  }
+  .sale__button::after {
+    display: none;
+  }
+  .sale__btn {
+    margin: 0 auto;
+  }
+  .proposals__image {
+    padding-right: 0;
+    margin-right: 50px;
+  }
+  .partners__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .partners__icon {
+    opacity: 1;
+    -webkit-filter: none;
+            filter: none;
+  }
+  .partners__icon {
+    margin: 0 auto;
+  }
+  .footer__contacts-logo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__contacts-text {
+    margin-left: 30px;
+  }
+  .footer__contacts-numbers {
+    width: 100%;
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .footer__contacts-numbersright {
+    margin-top: 0;
+  }
+  .footer__form {
+    position: unset;
+    margin: 40px auto 0;
+  }
+  .footer__copyright-inner {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 /*# sourceMappingURL=style.css.map */

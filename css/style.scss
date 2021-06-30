@@ -424,9 +424,10 @@ $super-lite-yellow: #fff5d6;
             width: 15px;
             height: 100px;
             margin-left: 60px;
-            background: #f2d25e;
+            background-color: #f2d25e;
             position: absolute;
-            z-index: 1;
+            top: -20px;
+            z-index: 9999999;
             -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
             -webkit-transition: all 0.1s;
@@ -468,24 +469,34 @@ $super-lite-yellow: #fff5d6;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 30px;
 
-        margin-top: 28px;
+        margin-top: 73px;
     }
     &__card{
         text-align: center;
 
-        height: 470px;
+        height: 416px;
         &:nth-of-type(1){
-            background: url(../img/steps_1_bg.png) no-repeat 0 50px;
+            background: url(../img/steps_1_bg.png);
+            background-size: 100%;
+            background-position: center bottom;
+            background-repeat: no-repeat;
         }
         &:nth-of-type(2){
-            background: url(../img/steps_2_bg.png) no-repeat 0 50px;
+            background: url(../img/steps_2_bg.png);
+            background-size: 100%;
+            background-position: center bottom;
+            background-repeat: no-repeat;
         }
         &:nth-of-type(3){
-            background: url(../img/steps_3_bg.png) no-repeat 0 50px;
+            background: url(../img/steps_3_bg.png);
+            background-size: 100%;
+            background-position: center bottom;
+            background-repeat: no-repeat;
         }
     }
     &__card-img-inner{
         height: 170px;
+        margin-top: -45px;
     }
     &__card-img{
         margin: 0 auto;
@@ -1091,6 +1102,10 @@ $super-lite-yellow: #fff5d6;
 
     .header{
 
+        &__inner{
+            padding: 20px 0;
+
+        }
         &__button{
             min-width: 60px;
             width: 60px;
@@ -1101,28 +1116,31 @@ $super-lite-yellow: #fff5d6;
     }
 
     .steps{
-        &__line{
-            display:none;
-        }
+
         &__cards{
-            display: block;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
         &__card{
-            width: 100%;
+            width: 45%;
 
-            margin-bottom: 20px;
+            margin-bottom: 45px;
             &:last-of-type{
                 margin-bottom: 0;
             }
         }
-        &__card:nth-of-type(1),
-        &__card:nth-of-type(2),
-        &__card:nth-of-type(3){
-            background-size: cover;
+
+        &__card-img-inner{
+            margin-top: 0;
+        }
+        &__card-content{
+            padding: 0 10px;
         }
 
         &__card-content-text{
-            padding: 10px 100px 0;
+            padding: 0;
+            margin-top: 10px;
         }
     }
 
@@ -1167,7 +1185,84 @@ $super-lite-yellow: #fff5d6;
         }
     }
 
+    .sale{
+        background: none;
+        background-image: url(../img/sale-mobilebg.svg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        margin-top: 200px;
+        &__inner{
+            display: block;
+        }
+        &__proposition{
+            position: relative;
+            bottom: 80px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__proposition-inner{
+            position: relative;
+            top: 22%;
+        }
+        &__button{
+            margin: 0;
+            bottom: 30px;
+            &::after{
+                display: none;
+            }
+        }
+        &__btn{
+            margin: 0 auto;
+        }
+    }
+
+    .proposals{
+        &__image{
+            padding-right: 0;
+            margin-right: 50px;
+        }
+    }
+    .partners{
+        &__list{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        &__icon{
+            opacity: 1;
+            filter: none;
+        }
+        &__icon{
+            margin: 0 auto;
+        }
+    }
+
+    .footer{
+
+        &__contacts-logo{
+            justify-content: center;
+        }
+        &__contacts-text{
+            margin-left: 30px;
+        }
+        &__contacts-numbers{
+            width: 100%;
+            flex-direction: unset;
+            justify-content: space-evenly;
+        }
+        &__contacts-numbersright{
+            margin-top: 0;
+        }
+        &__form{
+            position: unset;
+            margin: 40px auto 0;
+        }
+        &__copyright-inner{
+            justify-content: space-between;
+        }   
+    }
 }
+
+
 
 @media (max-width: 768px){
 
@@ -1181,3 +1276,4 @@ $super-lite-yellow: #fff5d6;
 @media (max-width: 375px){
 
 }
+
