@@ -1,4 +1,4 @@
-/* main-button*/
+/* кнопка в Hero*/
 @keyframes button {
   0% {
       left: -30px;
@@ -17,9 +17,8 @@
 }
 
 
+/*Грузовики*/
 
-
-/*Объекты анимации*/
 #g4559{
 	animation: 5s ease-in-out 3s road_car1;
 	animation-iteration-count: infinite;
@@ -44,6 +43,9 @@
 	opacity:0;
 }
 
+
+/*Дорожная разметка*/
+
 #f0_0{
 	animation: 1s linear 0s a_f0_0;
 	animation-iteration-count: infinite;
@@ -64,21 +66,16 @@
 	animation-iteration-count: infinite;
 }
 
+
+/*Колеса*/
 .wheel{
 	animation: 0.5s linear 0s a_wheel;
 	animation-iteration-count: infinite;
 	transform: perspective(500px) rotate3d(1, 1, 1, 59deg) scale(0.7) rotateZ(0deg);
 }
 
-#big_1d8e{
-	animation: 4s linear 1s a_1d8e;
-	animation-iteration-count: infinite;
-}
 
-#male_1b8e{
-	animation: 4s linear 3s a_1d8e;
-	animation-iteration-count: infinite;
-}
+/*Монетка*/
 
 .money-tun ac:after{
 	animation: 3s linear 3s money-anim;
@@ -89,11 +86,9 @@
 	animation-iteration-count: infinite;
 }
 
-.save path{
-	animation: 3s linear 0s save-anim;
-	animation-iteration-count: infinite;
-}
 
+
+/*Локация*/
 
 #st-1,
 #st-2,
@@ -112,7 +107,9 @@
           animation: 4s linear 3s a_1d8e;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
-/*конец объекты анимации*/
+
+
+
 /*Ключи анимации*/
 
 /*f0_0*/
@@ -340,123 +337,6 @@ body.back-row-toggle .rain.back-row {
   }
 }
 
-.splat {
-  width: 15px;
-  height: 10px;
-  border-top: 2px dotted rgb(18, 177, 224);
-  border-radius: 50%;
-  opacity: 1;
-  transform: scale(0);
-  animation: splat 0.5s linear infinite;
-  display: none;
-}
-
-body.splat-toggle .splat {
-  display: block;
-}
-
-@keyframes splat {
-  0% {
-    opacity: 1;
-    transform: scale(0);
-  }
-  80% {
-    opacity: 1;
-    transform: scale(0);
-  }
-  90% {
-    opacity: 0.5;
-    transform: scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(1.5);
-  }
-}
-
-.toggles {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 3;
-}
-
-.toggle {
-  position: absolute;
-  left: 20px;
-  width: 50px;
-  height: 50px;
-  line-height: 51px;
-  box-sizing: border-box;
-  text-align: center;
-  font-family: sans-serif;
-  font-size: 10px;
-  font-weight: bold;
-  background-color: rgba(255, 255, 255, 0.2);
-  color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.toggle:hover {
-  background-color: rgba(255, 255, 255, 0.25);
-}
-
-.toggle:active {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.toggle.active {
-  background-color: rgba(255, 255, 255, 0.4);
-}
-
-.splat-toggle {
-  top: 20px;
-}
-
-.back-row-toggle {
-  top: 90px;
-  line-height: 12px;
-  padding-top: 14px;
-}
-
-.single-toggle {
-  top: 160px;
-}
-
-body.single-toggle .drop {
-  display: none;
-}
-
-body.single-toggle .drop:nth-child(10) {
-  display: block;
-}
-
-.calcly {
-    -webkit-clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
-    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
-    position: absolute;
-    top: -45%;
-    left: 18%;
-    width: 12.5vw;
-    height: 13vw;
-    background: #00000000;
-    transform: perspective(461px) rotate3d(32, 16, 0, 79deg) scale(0.6) rotateY(-18deg) rotateX(-6deg) rotateZ(8deg);
-}
-
-.sontong{
-	position: absolute;
-    bottom: -32px;
-    left: -8px;
-    width: 100%;
-    height: 74%;
-    background: #00000000;
-    transform: rotateX(39deg);
-    -webkit-clip-path: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
-    z-index: -1;
-}
 
 
 /* MONEY*/
