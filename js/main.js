@@ -52,7 +52,7 @@ var submitModal = document.getElementById("my_ok_modal");
 var btn = document.querySelectorAll(".button");
 
 var modbtn = document.querySelector(".modal-main__form-button");
-var okbtn = document.querySelector(".modal-gratitude__btn");
+var okbtn = document.querySelector(".modal-gratitude__button");
 
 var xmodbutton1 = document.getElementsByClassName("modal-main__closebtn")[0];
 var xmodbutton2 = document.getElementsByClassName("modal-gratitude__closebtn")[0];
