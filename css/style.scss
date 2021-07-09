@@ -1455,12 +1455,11 @@ $super-lite-yellow: #fff5d6;
         }
     }
     .services{
-        &__card-inner:hover{
+        &__card-inner:hover,
+        &__card:hover{
             display:none;
         }
-        &__card:hover{
-            border: 1px solid gainsboro;
-        }
+    
     }
 
     .sale{

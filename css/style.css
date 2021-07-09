@@ -1554,11 +1554,8 @@ button {
   .steps__card-img-inner {
     margin-top: -55px;
   }
-  .services__card-inner:hover {
+  .services__card-inner:hover, .services__card:hover {
     display: none;
-  }
-  .services__card:hover {
-    border: 1px solid gainsboro;
   }
   .sale__proposition {
     width: 100%;
