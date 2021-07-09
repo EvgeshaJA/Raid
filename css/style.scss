@@ -1454,6 +1454,14 @@ $super-lite-yellow: #fff5d6;
             margin-top: -55px;
         }
     }
+    .services{
+        &__card-inner:hover{
+            display:none;
+        }
+        &__card:hover{
+            border: 1px solid gainsboro;
+        }
+    }
 
     .sale{
         &__proposition{
@@ -1533,6 +1541,9 @@ $super-lite-yellow: #fff5d6;
 
 
     .modal-main{
+        &__inner{
+            top: 10%;
+        }
         &__closebtn{
             display:none;
         }
@@ -1541,6 +1552,7 @@ $super-lite-yellow: #fff5d6;
     .modal-gratitude{
         &__inner{
             width: 350px;
+            top: 10%;
         }
         &__content{
             padding: 45px 15px 35px;

@@ -1554,6 +1554,12 @@ button {
   .steps__card-img-inner {
     margin-top: -55px;
   }
+  .services__card-inner:hover {
+    display: none;
+  }
+  .services__card:hover {
+    border: 1px solid gainsboro;
+  }
   .sale__proposition {
     width: 100%;
   }
@@ -1622,11 +1628,15 @@ button {
     padding-left: 0;
     padding-right: 0;
   }
+  .modal-main__inner {
+    top: 10%;
+  }
   .modal-main__closebtn {
     display: none;
   }
   .modal-gratitude__inner {
     width: 350px;
+    top: 10%;
   }
   .modal-gratitude__content {
     padding: 45px 15px 35px;
