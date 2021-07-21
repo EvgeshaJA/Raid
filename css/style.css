@@ -201,19 +201,27 @@ button {
   margin-right: 35px;
 }
 
-.menu__list-item:hover {
-  border-bottom: 2px solid #edbc19;
-}
-
 .menu__list-link {
   font-size: 18px;
   color: inherit;
+  position: relative;
 }
 
 .menu__list-link:hover {
-  font-weight: bold;
+  text-shadow: 0 0 .9px #333, 0 0 .9px #333, 0 0 .9px #333;
   -webkit-transition: ease 0.3s;
   transition: ease 0.3s;
+}
+
+.menu__list-link:hover::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #edbc19;
 }
 
 .modal-main {
@@ -659,7 +667,7 @@ button {
 
 .services__card-inner:hover {
   width: 100%;
-  height: 400px;
+  min-height: 400px;
   background-color: #f0be1c;
   position: absolute;
   bottom: 0;
@@ -1555,7 +1563,7 @@ button {
     margin-top: -55px;
   }
   .services__card-inner:hover, .services__card:hover {
-    display: none;
+    pointer-events: none;
   }
   .sale__proposition {
     width: 100%;
